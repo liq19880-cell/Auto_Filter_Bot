@@ -296,7 +296,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 <b>📝 𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗕𝗬:</b>
 <blockquote>{message.from_user.mention}</blockquote>
 <b>🌟 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬:</b>
-<blockquote><a href="https://t.me/johnmarstonxbot"> 𝐉𝐎𝐇𝐍 𝐌𝐀𝐑𝐒𝐓𝐎𝐍 👾 </a></blockquote>"""
+<blockquote><a href="https://t.me/johnnwickbot"> 𝑱𝑶𝑯𝑵𝑾𝑰𝑪𝑲 ☠️ </a></blockquote>"""
 
     LOGO = r"""
     ██████╗░██████╗░███████╗░█████╗░███╗░░░███╗██╗░░██╗██████╗░░█████╗░████████╗███████╗
