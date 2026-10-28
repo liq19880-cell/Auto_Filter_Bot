@@ -171,7 +171,7 @@ async def next_page(client, query):
         return
     temp.GETALL[key] = files
     settings = await get_settings(query.message.chat.id)
-    if settings.get('button'):
+    if True:
         btn = [
             [
                 InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)} ≽ " + clean_filename(
@@ -314,7 +314,7 @@ async def next_page(client, query):
                             "ɴᴇxᴛ ⋟", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
-    if not settings["button"]:
+    if False:
         cur_time = datetime.now(TZ).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - \
             timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(
@@ -378,7 +378,7 @@ async def advantage_spoll_choker(client, query):
             except Exception as e:
                 logger.error("Error In Spol: %s — Make Sure Bot Admin BIN CHANNEL", e)
         btn = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔰Cʟɪᴄᴋ ʜᴇʀᴇ & ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ🔰", url=OWNER_LNK)]])
+            [[InlineKeyboardButton("•Cʟɪᴄᴋ ʜᴇʀᴇ & ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ•", url=OWNER_LNK)]])
         k = await query.message.edit(script.MVE_NT_FND, reply_markup=btn)
         await asyncio.sleep(10)
         await k.delete()
@@ -445,7 +445,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
-    if settings.get('button'):
+    if True:
         btn = [
             [
                 InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)} ≽ " + clean_filename(
@@ -517,7 +517,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             [InlineKeyboardButton(
                 text="↭ ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ↭", callback_data="pages")]
         )
-    if not settings["button"]:
+    if False:
         cur_time = datetime.now(TZ).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - \
             timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(
@@ -599,7 +599,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
-    if settings.get('button'):
+    if True:
         btn = [
             [
                 InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)} ≽ " + clean_filename(
@@ -667,7 +667,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     else:
         btn.append([InlineKeyboardButton(
             text="↭ ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ↭", callback_data="pages")])
-    if not settings["button"]:
+    if False:
         cur_time = datetime.now(TZ).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - \
             timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(
@@ -745,7 +745,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     temp.GETALL[key] = files
     settings = await get_settings(chat_id)
     btn: list[list[InlineKeyboardButton]] = []
-    if settings.get("button"):
+    if True:
         btn.extend(
             [
                 [
@@ -799,7 +799,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             [InlineKeyboardButton(
                 "↭  ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ↭", callback_data="pages")]
         )
-    if not settings.get("button"):
+    if False:
         time_difference = datetime.now(TZ) - start_t
         remaining_seconds = f"{time_difference.total_seconds():.2f}"
         dreamx_title = clean_search_text(search_final)
@@ -1157,13 +1157,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about')
+                    InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
+                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
                 ],[
-                    InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
-                     InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info"),
+                    InlineKeyboardButton('• ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ •', callback_data="topsearch"),
+                     InlineKeyboardButton('• ᴜᴘɢʀᴀᴅᴇ •', callback_data="premium_info"),
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(TZ)
@@ -1200,7 +1200,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "donation":
         buttons = [[
-                InlineKeyboardButton('🌲 Sᴇɴᴅ Dᴏɴᴀᴛᴇ Sᴄʀᴇᴇɴsʜᴏᴛ Hᴇʀᴇ', url=OWNER_LNK)
+                InlineKeyboardButton('• Sᴇɴᴅ Dᴏɴᴀᴛᴇ Sᴄʀᴇᴇɴsʜᴏᴛ Hᴇʀᴇ •', url=OWNER_LNK)
             ],[
                 InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='about')
             ]]
@@ -1233,10 +1233,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
-            InlineKeyboardButton ('🪔 sᴏᴜʀᴄᴇ', callback_data='source'),
+            InlineKeyboardButton('• ᴅɪꜱᴄʟᴀɪᴍᴇʀ •', callback_data='disclaimer'),
+            InlineKeyboardButton ('• ᴀᴅᴍɪɴ •', callback_data='source'),
         ],[
-            InlineKeyboardButton('ᴅᴏɴᴀᴛɪᴏɴ 💰', callback_data='donation'),
+            InlineKeyboardButton('• ᴅᴏɴᴀᴛɪᴏɴ •', callback_data='donation'),
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
         ]]
@@ -1284,7 +1284,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('ᴅʀᴇᴀᴍxʙᴏᴛᴢ 📜', url='https://github.com/DreamXBotz/Auto_Filter_Bot.git'),
+            InlineKeyboardButton('𝗖𝗩 𝗔𝗗𝗠𝗜𝗡 ✨', url='https://t.me/cvdadxbot'),
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1467,12 +1467,12 @@ async def auto_filter(client, msg, spoll=False):
                         return result
                     else:
                         try:
-                            await m.edit(script.MVE_NT_FND)
-                            if settings.get('auto_delete'):
-                                asyncio.create_task(_schedule_delete(m, message, DELETE_TIME))
+                            if m:
+                                await m.delete()
                         except Exception:
                             pass
-                        return
+                        result = await advantage_spell_chok(client, message)
+                        return result
             else:
                 return
         else:
@@ -1489,7 +1489,7 @@ async def auto_filter(client, msg, spoll=False):
             asyncio.create_task(client.send_reaction(chat_id=message.chat.id, message_id=message.id, emoji="🍿"))
         except Exception:
             pass
-        if settings.get('button'):
+        if True:
             btn = [
                 [
                     InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)} ≽ " + clean_filename(
@@ -1603,30 +1603,30 @@ async def auto_filter(client, msg, spoll=False):
                 year=imdb['year'],
                 genres=imdb['genres'],
                 poster=imdb['poster'],
-                plot=imdb['plot'] if settings.get('button') else "N/A",
+                plot=imdb['plot'],
                 rating=imdb['rating'],
                 url=imdb['url'],
                 **locals()
             )
             temp.IMDB_CAP[message.from_user.id] = cap
-            if not settings.get('button'):
+            if False:
                 cap += "\n\n<b><u>Your Requested Files Are Here</u></b>\n\n"
                 for idx, file in enumerate(files, start=1):
                     cap += f"<b>\n{idx}. <a href='https://telegram.me/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}'>[{get_size(file.file_size)}] {clean_filename(file.file_name)}\n</a></b>"
         else:
             temp.IMDB_CAP[message.from_user.id] = None
             if ULTRA_FAST_MODE:
-                if settings.get('button'):
-                    cap = f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'} \n\n<u>Your Requested Files Are Here</u> \n\n</b>"
+                if True:
+                    cap = f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n🌟 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {message.chat.title or temp.B_LINK or '𝗖𝗜𝗡𝗘𝗠𝗔𝗩𝗜𝗜𝗕𝗘𝗦𝗦𝗦'} \n\n<u>Your Requested Files Are Here</u> \n\n</b>"
                 else:
-                    cap = f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'} \n\n<u>Your Requested Files Are Here</u> \n\n</b>"
+                    cap = f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n🌟 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {message.chat.title or temp.B_LINK or '𝗖𝗜𝗡𝗘𝗠𝗔𝗩𝗜𝗜𝗕𝗘𝗦𝗦𝗦'} \n\n<u>Your Requested Files Are Here</u> \n\n</b>"
                     for idx, file in enumerate(files, start=1):
                         cap += f"<b>\n{idx}. <a href='https://telegram.me/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}'>[{get_size(file.file_size)}] {clean_filename(file.file_name)}\n</a></b>"
             else:
-                if settings.get('button'):
-                    cap = f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n🧱 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'} \n\n<u>Your Requested Files Are Here</u> \n\n</b>"
+                if True:
+                    cap = f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n🧱 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n🌟 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {message.chat.title or temp.B_LINK or '𝗖𝗜𝗡𝗘𝗠𝗔𝗩𝗜𝗜𝗕𝗘𝗦𝗦𝗦'} \n\n<u>Your Requested Files Are Here</u> \n\n</b>"
                 else:
-                    cap = f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n🧱 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⚜️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {message.chat.title or temp.B_LINK or 'ᴅʀᴇᴀᴍxʙᴏᴛᴢ'} \n\n<u>Your Requested Files Are Here</u> \n\n</b>"
+                    cap = f"<b>🏷 ᴛɪᴛʟᴇ : <code>{search}</code>\n🧱 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n🌟 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : ⚡ {message.chat.title or temp.B_LINK or '𝗖𝗜𝗡𝗘𝗠𝗔𝗩𝗜𝗜𝗕𝗘𝗦𝗦𝗦'} \n\n<u>Your Requested Files Are Here</u> \n\n</b>"
 
                     for idx, file in enumerate(files, start=1):
                         cap += f"<b>\n{idx}. <a href='https://telegram.me/{temp.U_NAME}?start=file_{message.chat.id}_{file.file_id}'>[{get_size(file.file_size)}] {clean_filename(file.file_name)}\n</a></b>"
