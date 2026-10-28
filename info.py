@@ -38,13 +38,13 @@ INDEX_CAPTION = is_enabled(environ.get('SAVE_CAPTION', "True"), True) # Save cap
 COVERX = is_enabled(environ.get('COVERX', "True"), True) # Use cover image for indexed files (default: True)
 # If you disable it then bot will use a default thumb for all files
 
-PICS_URL = (environ.get('PICS_URL', 'https://johnwick.liq19880.workers.dev/')).split() #random anime girl img each time from aniwallpaper (Experimental)
-PICS = (environ.get('PICS', 'https://telegra.ph/file/d3add0ae6a7a3e123a016-54df59560eee145da9.jpg')).split()  # Sample pic
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
-MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/242b7f1b52743938d81f1.jpg'))
-FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c3d8.jpg https://graph.org/file/56b5deb73f3b132e2bb73.jpg')).split()  # Fsub pic
+PICS_URL = (environ.get('PICS_URL', 'https://www.image2url.com/r2/default/images/1793190957466-0f64e6ba-9eaf-452c-a507-c58fb6d4eeba.jpg')).split() #random anime girl img each time from aniwallpaper (Experimental)
+PICS = (environ.get('PICS', 'https://www.image2url.com/r2/default/images/1793190957466-0f64e6ba-9eaf-452c-a507-c58fb6d4eeba.jpg')).split()  # Sample pic
+NOR_IMG = environ.get("NOR_IMG", "https://www.image2url.com/r2/default/images/1793190957466-0f64e6ba-9eaf-452c-a507-c58fb6d4eeba.jpg")
+MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://www.image2url.com/r2/default/images/1793190957466-0f64e6ba-9eaf-452c-a507-c58fb6d4eeba.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://www.image2url.com/r2/default/images/1793190957466-0f64e6ba-9eaf-452c-a507-c58fb6d4eeba.jpg")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://www.image2url.com/r2/default/images/1793190957466-0f64e6ba-9eaf-452c-a507-c58fb6d4eeba.jpg'))
+FSUB_PICS = (environ.get('FSUB_PICS', 'https://www.image2url.com/r2/default/images/1793190957466-0f64e6ba-9eaf-452c-a507-c58fb6d4eeba.jpg')).split()  # Fsub pic
 
 # ============================
 # Admin, Channels & Users Configuration
