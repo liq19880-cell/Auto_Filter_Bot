@@ -5,7 +5,9 @@ class script(object):
 """
 
 
-    GSTART_TXT = """<b>ʜᴇʏ {},</b>
+    GSTART_TXT = """<b></b>
+
+<b>ʜᴇʏ {},</b>
 
 <b>🤖 ɪ ᴀᴍ <a href=https://t.me/{}>{}</a>, ᴛʜᴇ ᴍᴏꜱᴛ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ.</b>"""
 
@@ -131,7 +133,7 @@ Nᴀᴍᴇ - {}
     CUDNT_FND = SPELLING_ERROR_TXT = """<b>‼️ ꜱᴘᴇʟʟɪɴɢ ᴍɪꜱᴛᴀᴋᴇ ʙʀᴏ!</b>  
 <b>😊 ɴᴏ ᴡᴏʀʀɪᴇꜱ — ᴄʜᴏᴏꜱᴇ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴏɴᴇ ʙᴇʟᴏᴡ 👇</b>
 
-<blockquote>👇 नीचे दिए गए विकल्पों में से movie के नाम की सही spelling चुनें</blockquote>"""
+<blockquote>👇 Choose the correct spelling of the movie name from the options given below</blockquote>"""
 
 
     DEL_MSG = """⚠️ ᴛʜɪꜱ ᴍᴏᴠɪᴇ ꜰɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u><code>{}</code></u></b>
@@ -155,7 +157,7 @@ Nᴀᴍᴇ - {}
     
     MVE_NT_FND = NOT_FOUND_TXT = """<b>😌 ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ.</b>
 
-<blockquote>😌 यह ᴍᴏᴠɪᴇ मुझे ᴍᴇʀᴇ ᴅᴀᴛᴀʙᴀꜱᴇ में नहीं मिली।</blockquote>"""
+<blockquote>😌 ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ.</blockquote>"""
 
     ALREADY_AVAILABLE_TXT = """<b>ʜᴇʏ {},
     
@@ -178,9 +180,9 @@ Nᴀᴍᴇ - {}
 
 ʏᴏᴜ ᴄᴀɴ sᴇᴀʀᴄʜ ғᴏʀ ᴍᴏᴠɪᴇs ᴏɴʟʏ ᴏɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ. ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ sᴇᴀʀᴄʜ ғᴏʀ ᴍᴏᴠɪᴇs ᴏɴ ᴅɪʀᴇᴄᴛ ʙᴏᴛ. ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ sᴇᴀʀᴄʜ ʏᴏᴜʀ ғᴀᴠᴏʀɪᴛᴇ ᴍᴏᴠɪᴇ ᴛʜᴇʀᴇ 👇
 
-<blockquote>आप केवल हमारे ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ पर ही ᴍᴏᴠɪᴇ sᴇᴀʀᴄʜ कर सकते हो । 
+<blockquote>You can search for movies only in our movie group.
 
-आपको ᴅɪʀᴇᴄᴛ ʙᴏᴛ पर ᴍᴏᴠɪᴇ sᴇᴀʀᴄʜ करने की ᴘᴇʀᴍɪssɪᴏɴ नहीं है कृपया नीचे दिए गए ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ वाले ʙᴜᴛᴛᴏɴ पर क्लिक करके हमारे ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ को ᴊᴏɪɴ करें और वहां पर अपनी मनपसंद ᴍᴏᴠɪᴇ sᴇᴀʀᴄʜ सर्च करें ।</blockquote></b>"""
+You are not permitted to search for movies directly through the bot. Please click the Request Here button below to join our movie group, where you can search for your favorite movies.</blockquote></b>"""
 
     PM_LOG_TXT = """<b>#𝐏𝐌_𝐌𝐒𝐆
 
@@ -265,34 +267,36 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/cinemaviibesss">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a href="https://t.me/cinemaviibesss">[ ᴅʀᴇᴀᴍxʙᴏᴛᴢ ]</a></b>"""
+    CAPTION = """<b><a href="https://t.me/cinemaviibesss">{file_name}</a></b>\n\n<b>🌟 Powered By : <a href="https://t.me/cinemaviibesss">[ ᴄɪɴᴇᴍᴀᴠɪʙᴇꜱ ]</a></b>"""
 
     
     MOVIE_UPDATE_NOTIFY_TXT = """
-<b><a href={poster_url}>📥</a><a href={imdb_url}>New {tag} Added</a></b>
 
-<blockquote>✨ ᴛɪᴛʟᴇ : <code>{filename} {year}</code>
-
-🎭 ɢᴇɴʀᴇs : <b>{genres}</b>
-📺 ᴏᴛᴛ        : <b>{ott}</b>
-🎞️ ǫᴜᴀʟɪᴛʏ : <b>{quality}</b>
-🎧 ᴀᴜᴅɪᴏ    : <b>{language}</b>
-🔥 ʀᴀᴛɪɴɢ   : <b>{rating}</b>
+<b><a href={poster_url}></a><a href={imdb_url}></a></b>
+<blockquote><code>{filename} {year}</code></blockquote>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<blockquote>🎞️ 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 : <b>{quality}</b>
+🎧 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 : <b>{language}</b>
+🎭 𝗚𝗲𝗻𝗿𝗲 : <b>{genres}</b>
+⭐ 𝗥𝗮𝘁𝗶𝗻𝗴 : <b>{rating}</b>
 {episodes}
 </blockquote>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<blockquote>≡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ - @cinemaviibesss</blockquote>
 
-🔍 <b>Sᴇᴀʀᴄʜ →</b> {search_link}
 """
 
 
-    IMDB_TEMPLATE_TXT = """<b><a href={url}>{title}</a> (<a href={url}/releaseinfo>{year}</a>)</b>
+    IMDB_TEMPLATE_TXT = """
 
-ʀᴀᴛɪɴɢ : <a href={url}/ratings>{rating}</a>
-ɢᴇɴʀᴇ : {genres}
-ᴀᴜᴅɪᴏ : {languages}
-
-sʜᴏᴡɴ ɪɴ : {remaining_seconds} <i>sᴇᴄ</i>⚡️
-<b>ʀᴇǫ ʙʏ : {message.from_user.mention}</b>"""
+<b>🏷️ 𝗧𝗜𝗧𝗟𝗘:</b>
+<blockquote><b>{title} {year}</b></blockquote>
+<b>⏱ 𝗦𝗛𝗢𝗪𝗡 𝗜𝗡:</b>
+<blockquote>{remaining_seconds} sec ⚡️</blockquote>
+<b>📝 𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗕𝗬:</b>
+<blockquote>{message.from_user.mention}</blockquote>
+<b>🌟 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬:</b>
+<blockquote><a href="https://t.me/johnmarstonxbot"> 𝐉𝐎𝐇𝐍 𝐌𝐀𝐑𝐒𝐓𝐎𝐍 👾 </a></blockquote>"""
 
     LOGO = r"""
     ██████╗░██████╗░███████╗░█████╗░███╗░░░███╗██╗░░██╗██████╗░░█████╗░████████╗███████╗
@@ -318,7 +322,7 @@ sʜᴏᴡɴ ɪɴ : {remaining_seconds} <i>sᴇᴄ</i>⚡️
 ◉ 60 ᴅᴀʏꜱ - 75 ₹  / 75 ꜱᴛᴀʀ
 
 •─────•─────────•─────•
-🏷️ <a href='https://t.me/cinemaviibesss'>ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ᴘʀᴏᴏꜰ</a>
+
 
 ‼️ ᴍᴜꜱᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.
 ‼️ ᴀꜰᴛᴇʀ ꜱᴇɴᴅɪɴɢ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ɢɪᴠᴇ ᴜꜱ ꜱᴏᴍᴇᴛɪᴍᴇꜱ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪꜱᴛ."""
@@ -326,8 +330,6 @@ sʜᴏᴡɴ ɪɴ : {remaining_seconds} <i>sᴇᴄ</i>⚡️
     PREMIUM_STAR_TEXT = """<b><blockquote>ᴘᴀʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ: ᴛᴇʟᴇɢʀᴀᴍ ꜱᴛᴀʀꜱ ⭐</blockquote>
 
 ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ʙᴜʏ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ꜱᴇʀᴠɪᴄᴇ ᴜꜱɪɴɢ ᴛᴇʟᴇɢʀᴀᴍ ꜱᴛᴀʀꜱ.  
-
-ɪꜰ ʏᴏᴜ ꜰᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ, ᴛᴀᴋᴇ ᴀ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀɴᴅ ꜱᴇɴᴅ ɪᴛ ᴛᴏ - @deendayal_Support_group
 
 ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴅᴇꜱɪʀᴇᴅ ᴀᴍᴏᴜɴᴛ ᴀɴᴅ ᴘᴜʀᴄʜᴀꜱᴇ ᴀ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 👇.</b>
 """
@@ -402,10 +404,10 @@ sʜᴏᴡɴ ɪɴ : {remaining_seconds} <i>sᴇᴄ</i>⚡️
 
 
 
-    SOURCE_TXT ="""<b>ՏOᑌᖇᑕᗴ ᑕOᗪᗴ : 👇 </b>
+    SOURCE_TXT ="""<b>  σωηєя  : 👇 </b>
 
-This Is An Open-Source Project. You Can Use It Freely, But Selling The Source Code Is Strictly Prohibited.\n
-ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<a href=https://github.com/iqbaleditzz/Auto_Filter_Bot.git>IqBaLeDiTzZ</a>\n """
+𝙵𝚘𝚛 𝚖𝚘𝚟𝚒𝚎 𝚛𝚎𝚚𝚞𝚎𝚜𝚝𝚜, 𝚞𝚙𝚍𝚊𝚝𝚎𝚜, 𝚗𝚎𝚠 𝚖𝚘𝚟𝚒𝚎𝚜, 𝚘𝚛 𝚊𝚗𝚢 𝚒𝚜𝚜𝚞𝚎𝚜, 𝚌𝚘𝚗𝚝𝚊𝚌𝚝 𝚞𝚜 𝚊𝚗𝚢𝚝𝚒𝚖𝚎!\n
+ᴏᴡɴ ᴄʜᴀɴɴᴇʟ ʜᴇʀᴇ ◉› :<a href=https://t.me/cinemaviibesss>ᴄɪɴᴇᴍᴀᴠɪʙᴇꜱ</a>\n """
 
 
     
